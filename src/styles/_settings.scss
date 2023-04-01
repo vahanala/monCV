@@ -1,0 +1,84 @@
+$font-1: 'Nova Round', cursive;
+$font-2 :'Dosis', sans-serif;
+$font-3:'Josefin sans', serif;
+
+
+$color-1: #221e32;
+$color-2:#16a480;
+$color-3: rgb(80, 192, 65);
+$color-4 : #131512;
+$color-5: #ffffff;
+$white :#0a9f43;
+$black : rgb(30, 58, 58);
+
+$borderRasius: 25px;
+$shadow: 0 1px 3px #333;
+$min-height: 95vh;
+
+@mixin verticalCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    margin: 1rem auto;
+    max-width: 1500px;
+    font-family: $font-1;
+    color: $black;
+}
+button{
+    cursor: pointer;
+}
+li{
+ list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+a:visited {
+    color: $black;
+}
+.home, .navigation .knowledges,.experience .portfolio, .contact{
+    display: flex;
+
+    @media screen and (max-width: 850px){
+            display: block !important;
+             } 
+        
+    }
+   .knowledges{
+        display: flex;
+    
+        @media screen and (max-width: 850px){
+                display: block !important;
+                 } 
+            
+        }
+        .portfolio{
+            display: flex;
+        
+            @media screen and (max-width: 850px){
+                    display: block !important;
+                     } 
+                
+            }       
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent{
+ margin-left: 4rem;
+
+
+@media screen and (max-width: 850px) {
+
+    margin-left: 0 !important
+
+ }
+}
